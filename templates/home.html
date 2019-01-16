@@ -1,0 +1,11 @@
+<h1>Waste Segrator</h1>
+
+<form action="{% url 'image' %}" method="GET" enctype="multipart/form-data">
+    {% csrf_token %}
+    <br><br>
+    <h3>Enter URL : </h3>
+    <input type="text" name='url_name'>
+    <br>
+    <input type="submit" value="Submit!">
+    <br>
+</form>
